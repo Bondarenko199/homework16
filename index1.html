@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+<body>
+    <section class="dark-bg">
+        <div class="container">
+            <div class="section-header header-margin">
+                <h2>Form</h2>
+            </div>
+            <form action="" method="">
+                <ul>
+                    <li>
+                        <input type="radio" name="sex" value="young-man" id="young-man">
+                        <label for="young-man">Молодой человек</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sex" value="lady" id="lady">
+                        <label for="lady">Девушка</label>
+                    </li>
+                    <li>
+                        <input type="text" name="family" id="family">
+                        <label for="family"> Семейное положение</label>
+                    </li>
+                    <li>
+                        <input type="text" name="social-status" id="social-status">
+                        <label for="social-status"> Социальный стату</label>
+                    </li>
+                    <li>
+                        <input type="text" name="home-adress" id="home-address">
+                        <label for="home-address"> Местожительство</label>
+                    </li>
+                    <li>
+                        <p>Что вы обычно делаете на выходных:</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="activities" value="sleep" id="sleep">
+                        <label for="sleep">Сплю</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="activities" value="walk-with-friends" id="walk-with-friends">
+                        <label for="walk-with-friends">Гуляю с друзьями</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="activities" value="fishing" id="fishing">
+                        <label for="fishing">Хожу на рыбалку</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="activities" value="play-games" id="play-games">
+                        <label for="play-games">Играю в игры</label>
+                    </li>
+                    <li>
+                        <p>Рассказать о формах в книге, посвящённой HTML: </p>
+                    </li>
+                    <!--QUESTION-->
+                    <li>
+                        <p>Сколько книг вы прочитали за свою жизнь: </p>
+                    </li>
+                    <li>
+                        <input type="radio" name="books" value="0-10" id="small">
+                        <label for="small">0-10</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="books" value="11-20" id="medium">
+                        <label for="medium">11-20</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="books" value="21-50" id="big">
+                        <label for="big">21-50</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="books" value="50+" id="huge">
+                        <label for="huge">50+</label>
+                    </li>
+                    <li>
+                        <p>Ваши комментарии: </p>
+                    </li>
+                    <li>
+                        <textarea name="comments" rows="10" cols="75"></textarea>
+                    </li>
+                    <button type="submit" value="send" disabled class="main-button" id="submit">submit</button>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

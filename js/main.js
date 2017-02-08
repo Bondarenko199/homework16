@@ -101,7 +101,29 @@ $(
         let coordinatesLeft = $(this).offset().left;
         let parent = $(this).parent();
         let closest = $(this).closest();
+        let buttonText = $("#my-info .main-button").text();
 
-        console.log(height + ", " + width + ", " + coordinatesTop + ", " + coordinatesLeft + ", " + parent + ", " + closest);
+        console.log(height+", "+width+", "+coordinatesTop+", "+ coordinatesLeft,", ", parent,", ", closest,", ", buttonText,".");
+    }),
+
+
+    // FORM
+
+    $("form input").on("change", function() {
+        let changed = $(this).serialize();
+        console.log(changed);
+    }),
+
+    $("#submit").on("click", function() {
+
+        let inputArray = $("form input").serializeArray();
+        console.log(inputArray);
+    }),
+
+    $("#family").on("change", function() {
+
+        let bothVal = $(this).val();
+        $("#social-status").val(bothVal);
+        $("#home-address").val(bothVal);
     })
 );
